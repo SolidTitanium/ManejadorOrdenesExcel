@@ -59,7 +59,7 @@ if __name__ == "__main__":
 
     #Dict writer
     for i in dONC.keys():
-        if dONC[i]["Zona"] == 1235:
+        if dONC[i]["Zona"] == 1235 or dONC[i]["Zona"] == 2801:
             dONC[i].update({"CIERRE WEB": "", "FACTURACION": "", "DIAS DE REPARTO": ""})
         else:
             dONC[i].update(ZoneDict[dONC[i]["Zona"]])
